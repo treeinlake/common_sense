@@ -49,7 +49,7 @@
   export HADOOP_HDFS_HOME=$HADOOP_INSTALL
   export YARN_HOME=$HADOOP_INSTALL
   export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
-  export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+  export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib/native"
   #HADOOP VARIABLES END
   ```
 

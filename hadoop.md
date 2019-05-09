@@ -42,6 +42,7 @@
   #HADOOP VARIABLES START
   export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
   export HADOOP_INSTALL=/usr/local/hadoop
+  export HADOOP_HOME=$HADOOP_INSTALL
   export PATH=$PATH:$HADOOP_INSTALL/bin
   export PATH=$PATH:$HADOOP_INSTALL/sbin
   export HADOOP_MAPRED_HOME=$HADOOP_INSTALL

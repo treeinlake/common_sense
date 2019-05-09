@@ -61,10 +61,14 @@
   ```
 
 
-- 修改: `/usr/local/hadoop/etc/hadoop/core-site.xml`: （hadoop）
+- 修改: `/usr/local/hadoop/etc/hadoop/core-site.xml`: （hadoop）(注意创建tmp.dir)
 
   ```xml
   <configuration>
+      <property>
+          <name>hadoop.tmp.dir</name>
+          <value>/home/lake/hadoop_tmp</value>
+      </property>
       <property>
           <name>fs.defaultFS</name>
           <value>hdfs://localhost:9000</value>
@@ -110,6 +114,13 @@
 - 启动: `sbin/start-dfs.sh`  `sbin/start-yarn.sh`
 
 - 停止: `sbin/stop-dfs.sh` `sbin/stop-yarn.sh`
+
+- 如果有问题请尝试`vim /etc/hosts`:
+
+  ```shell
+  127.0.0.1	localhost <machine-name>
+  # 127.0.1.1 <machine-name>
+  ```
 
 #### 便捷启动停止
 
